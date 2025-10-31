@@ -30,6 +30,8 @@ class Estudiante(db.Model):
             'ap_materno': self.ap_materno,
             'semestre': self.semestre,
         }
+with app.app_context():
+    db.create_all()    
 
 
 #Ruta raiz
